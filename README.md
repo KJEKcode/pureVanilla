@@ -5,7 +5,7 @@ Basic HTML, CSS &amp; JavaScript Website - Learning HTML, CSS &amp; JavaScript
 * created index.html
 * added HTML tags
 
-###### 12-17-2020-0242pm
+###### 12-17-2020-0721pm
 * updated index.html 
 * added class names and ids to index.html
 * added style.css
