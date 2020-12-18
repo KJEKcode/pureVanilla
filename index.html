@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pure Vanilla</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <div>
+        <div class="logo-container">
             <a href="/index.html">pureVanilla</a>
         </div>
-        <nav>
-            <button>&#9776;</button>
-            <ul>
+        <nav class="main-nav">
+            <button id="navButton" class="nav-button" aria-controls="mainMenu">&#9776;</button>
+            <ul id="mainMenu" class="main-menu" aria-hidden="true">
                 <li><a href="#sectionOne">Section 1</a></li>
                 <li><a href="#sectionTwo">Section 2</a></li>
-                <li><a href="#sectionThree">Section 3</a>
-                    <ul>
+                <li><button aria-controls="subMenu1">Section 3 +</button>
+                    <ul id="subMenu1" class="sub-menu1" aria-hidden="true">
+                        <li><a href="#sectionThree">Section 3</a></li>
                         <li><a href="#sec3subsec1">subSection 1</a></li>
                         <li><a href="#sec3subsec2">subSection 2</a></li>
                         <li><a href="#sec3subsec3">subSection 3</a></li>
                     </ul>
                 </li>
-                <li><a href="#sectionFour">Section 4</a>
-                    <ul>
+                <li><button aria-controls="subMenu2">Section 4 +</button>
+                    <ul id="subMenu2" class="sub-menu2" aria-hidden="true">
+                        <li><a href="#sectionFour">Section 4 </a></li>
                         <li><a href="#sec4subsec1">subSection 1</a></li>
                         <li><a href="#sec4subsec2">subSection 2</a></li>
                         <li><a href="#sec4subsec3">subSection 3</a></li>
@@ -36,7 +37,9 @@
     </header>
     <main>
         <section id="sectionOne">
-            <img src="https://via.placeholder.com/300" alt="300px placeholder image" />
+            <div class="img-container">
+                <img src="https://via.placeholder.com/300" alt="300px placeholder image" />
+            </div>
             <p>
                 Proident sunt est aute est deserunt velit fugiat ut aliquip. Non nulla
                 officia Lorem proident amet ipsum voluptate incididunt. Esse magna
@@ -55,7 +58,9 @@
         </section>
         <section id="sectionTwo">
             <h1>Section Two Heading One</h1>
-            <img src="https://via.placeholder.com/300" alt="300px placeholder image" />
+            <div class="img-container">
+                <img src="https://via.placeholder.com/300" alt="300px placeholder image" />
+            </div>
             <h2>Section Two Heading Two</h2>
             <p>
                 Proident sunt est aute est deserunt velit fugiat ut aliquip. Non nulla
@@ -92,7 +97,9 @@
                     <li><a href="#sec3subsec3">Section Three Header Four</a></li>
                 </ul>
             </nav>
-            <img src="https://via.placeholder.com/300" alt="300px placeholder image" />
+            <div class="img-container">
+                <img src="https://via.placeholder.com/300" alt="300px placeholder image" />
+            </div>
             <h2 id="sec3subsec1">Section Three Header Two</h2>
             <p>
                 Cillum consequat reprehenderit dolore commodo. Sint aliquip duis nisi
@@ -131,7 +138,7 @@
             <h1>Section Four Header One</h1>
             <code>
                 This area is ment for code that you would like to display in an html document
-               you can use html hex codes &amp;lt; &amp; &amp;gt; to display tags <br>
+               you can use html hex codes &amp;lt; &amp; &amp;gt; to display tags <br><br>
                 &lt;p&gt;this is a p tag used in a code block using &amp;lt; &amp; &amp;gt;&lt;/p&gt;
             </code>
             <aside>
@@ -202,7 +209,7 @@
     </main>
     <footer>
         <nav>
-            <ul>
+            <ul class="footer-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#sectionOne">Section 1</a></li>
                 <li><a href="#sectionTwo">Section 2</a></li>
@@ -227,5 +234,6 @@
         </div>
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
